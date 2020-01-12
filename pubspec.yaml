@@ -11,6 +11,9 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^0.1.2
+  dio: any
+  rxdart: any
+  connectivity: any
 
 dev_dependencies:
   flutter_test:
