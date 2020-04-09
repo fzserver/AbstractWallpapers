@@ -15,7 +15,7 @@ class ConnectionStatus {
 
   //* This is how we'll allow subscribing to connection changes
   StreamController connectionChangeController =
-  new StreamController.broadcast();
+      new StreamController.broadcast();
 
   //* flutter_connectivity
   final Connectivity _connectivity = Connectivity();
@@ -47,7 +47,7 @@ class ConnectionStatus {
 
     try {
       final result =
-      await InternetAddress.lookup('example.com'); //* ''''google.com');
+          await InternetAddress.lookup('example.com'); //* ''''google.com');
       if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {
         hasConnection = true;
       } else {
